@@ -1,3 +1,16 @@
+BaKo (2018.06.18): To install the aff library such that it can be detected,
+you must set the prefix to a path such that ${prefix}/bin is in your ${PATH}.
+
+On a Linux system, you would begin by editing 
+
+config/linux 
+
+to set any required CFLAGS and to modify the prefix.
+
+Then follow the instructions below, starting at (2).
+
+---------------------------------------
+
 To install the library, you need to create a configuration for your machine.
 Consult existing configurations in config.* for inspiration. If none of the
 preexisting configuration fits your machine, choose one that is close enough
@@ -36,4 +49,3 @@ the machine globally (you might need root priveleges for this step.)
 
 % su
 # python2.5 setup.py install
-
