@@ -18,6 +18,7 @@ install.CC=$(CC)
 CFLAGS=-Wall -O2 -DHAS_INTEGRAL_OFF_T \
                  -D_POSIX_C_SOURCE \
                  -D_LARGEFILE_SOURCE \
+                 -fPIC \
                  -D_FILE_OFFSET_BITS=64
 CXXFLAGS= $(CFLAGS) -I.
 #
@@ -40,7 +41,7 @@ AR=ar
 RANLIB=ranlib
 #
 # Where to install
-prefix=$$HOME/lhpc
+prefix=${HOME}/local
 #
 # By default, binaries go into $(prefix)/bin. If you want to select
 # another distination, set prefix_bin.
